@@ -1,7 +1,11 @@
+var user_loc;
 
 var onReadyEvents = function(){
   $('#click_me').click(function() {
   loadJSONstring();
+  });
+  navigator.geolocation.getCurrentPosition(function(position) {
+    user_loc = {lat: position.coords.latitude, lon: position.coords.longitude};
   });
 };
 
@@ -18,8 +22,6 @@ var loadJSONstring = function() {
         console.log("We got into the 'success' part. Here's the URL: " + weather_url);
         console.log(data);
         console.log(response.id);
-        // $('#click_me').click(function(data) {
-        // var text = JSON.stringify(data.id);
         var main = data.weather[0].main;
         $('#main').html(main);
         var desc = data.weather[0].description;
@@ -28,17 +30,9 @@ var loadJSONstring = function() {
         $('#temp').html(temp);
         var hum = data.main.humidity; // Need to convert something here too.
         $('#hum').html(hum);
-
       },
       error: function (errorData) {
         alert("Couldn't get weather data");
       }
     });
-};
-var clickHappens = function() {
-  $('#click_me').click(function(data) {
-    var text = JSON.stringify(data);
-    debugger;
-    $('#display_message').html(text);
-  });
 };

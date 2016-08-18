@@ -22,7 +22,6 @@ describe("Get JSON string from OWM", function() {
 
   xit('sets response as the JSON string', function() {
     response = json.pull_JSON(loc);
-    debugger;
     expect(response.id).toEqual(2698738);
   });
 
@@ -42,7 +41,7 @@ describe("Get JSON string from OWM", function() {
 describe("Parse JSON string for data", function() {
 
   beforeEach(function () {
-    var json_string = {"coord":{"lon":11.97,"lat":57.71},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"base":"cmc stations","main":{"temp":294.26,"pressure":1025.14,"humidity":95,"temp_min":294.26,"temp_max":294.26},"wind":{"speed":6.68,"deg":45,"gust":6.68},"rain":{"3h":0.005},"clouds":{"all":12},"dt":1471521271,"sys":{"type":3,"id":9444,"message":0.0029,"country":"SE","sunrise":1471491875,"sunset":1471545927},"id":2689287,"name":"Nordstaden","cod":200}
+    var json_string = {"coord":{"lon":11.97,"lat":57.71},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"base":"cmc stations","main":{"temp":294.26,"pressure":1025.14,"humidity":95,"temp_min":294.26,"temp_max":294.26},"wind":{"speed":6.68,"deg":45,"gust":6.68},"rain":{"3h":0.005},"clouds":{"all":12},"dt":1471521271,"sys":{"type":3,"id":9444,"message":0.0029,"country":"SE","sunrise":1471491875,"sunset":1471545927},"id":2689287,"name":"Nordstaden","cod":200};
   });
 
   xit('should return weather description', function() {
