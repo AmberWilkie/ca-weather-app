@@ -1,4 +1,4 @@
-describe('Partial sample', function() {
+describe('JSON partial', function() {
   beforeEach(function() {
     // We can load fixtures using this method:
     //jasmine.getFixtures().clearCache();
@@ -15,15 +15,14 @@ describe('Partial sample', function() {
 
   afterEach(function() {
     // If you need to reset some values after each testing
-    // you can do it here. 
+    // you can do it here.
   });
 
-  describe("displays text", function() {
+  describe("grabs JSON", function() {
 
-    it("when button is clicked", function() {
-      $('#text').val('Some random text...');
-      $('#click_me').trigger('click');
-      expect($('#display_message').text()).toBe('Some random text...');
+    it("when button clicked", function() {
+      $('#click_me').click();
+      expect($('#main').text()).toEqual("Clouds");
     });
   });
 });

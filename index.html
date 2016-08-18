@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Everybody's Weather App</title>
+</head>
+<body>
+  <h3>My Weather App</h3>
+  <input type="text" id="text" placeholder="Input some text">
+  <input type="button" id="click_me" value="Click me">
+  <div>
+    Main: <span id="main"></span><br>
+    Description: <span id="desc"></span><br>
+    Temperature: <span id="temp"></span><br>
+    Humidity: <span id="hum"></span><br>
+    <span id="wind"></span>
+  </div>
+
+  <script src="assets/js/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script type="text/javascript">
+    $(document).ready(onReadyEvents);
+  </script>
+</body>
+</html>

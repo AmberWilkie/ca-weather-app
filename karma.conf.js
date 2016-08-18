@@ -4,7 +4,7 @@
 module.exports = function(config) {
   config.set({
     basePath: '',
-    frameworks: ['jasmine-jquery', 'jasmine'],
+    frameworks: ['jasmine-ajax', 'jasmine-jquery', 'jasmine'],
     // list of files / patterns to load in the browser
     files: [
       //'https://code.jquery.com/jquery-2.1.4.js',
@@ -41,6 +41,7 @@ module.exports = function(config) {
       'karma-coveralls',
       'karma-jasmine',
       'karma-jasmine-jquery',
+      'karma-jasmine-ajax',
       "karma-spec-reporter"
     ],
     // test results reporter to use
