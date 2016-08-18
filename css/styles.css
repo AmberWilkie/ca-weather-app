@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+}
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+}
+input[type=text], [type=number] {
+  width: 60%;
+  padding: 10px 10px;
+  margin: 6px 0;
+  box-sizing: border-box;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type=text]:focus {
+    border: 1px solid #000000;
+}
+form {
+  font-family: Tahoma, Verdana, sans-serif;
+  padding: 10px;
+  font-size: 80%;
+}
+input[type=button] {
+  background-color: #c8c8c8;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 100%;
+}
+input[type=radio]{
+  vertical-align: middle;
+  font-size: 150%;
+}
+#toggler {
+  font-family: Tahoma, Verdana, sans-serif;
+  padding: 10px;
+  font-size: 100%;
+  text-align: center;
+  }
+#box {
+  background-color: powderblue;
+  text-align: center;
+  width: 500px;
+  padding: 20px;
+  font-family: Tahoma, Verdana, sans-serif;
+  padding: 10px;
+  font-size: 140%;
+}

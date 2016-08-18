@@ -1,0 +1,6 @@
+As an individual
+In order to determine what is happening outside
+without looking out the window
+I would like to see the current weather status
+with information about temperature, rain/clouds, and wind speed
+based on my current location
