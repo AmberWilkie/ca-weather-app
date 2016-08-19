@@ -25,7 +25,7 @@ function showPosition(lat, lon) {
 }
 
 var loadJSONstring = function() {
-  weather_url = 'https://api.openweathermap.org/data/2.5/weather?lat=57.71&lon=11.97&appid=ad168bad6ee62955f8e7f93867a2092f';
+  weather_url = 'http://api.openweathermap.org/data/2.5/weather?lat=57.71&lon=11.97&appid=ad168bad6ee62955f8e7f93867a2092f';
   $.ajax({
       dataType: "jsonp",
       url: weather_url,
